@@ -34,7 +34,7 @@ namespace olm {
  * The length of the buffer needed to hold a message.
  */
 std::size_t encode_message_length(
-    std::uint32_t counter,
+    std::size_t counter,
     std::size_t ratchet_key_length,
     std::size_t ciphertext_length,
     std::size_t mac_length

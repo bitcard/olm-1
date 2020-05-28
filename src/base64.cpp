@@ -68,7 +68,7 @@ std::uint8_t * olm::encode_base64(
         value >>= 6; output[0] = ENCODE_BASE64[value];
         output += 4;
     }
-    unsigned remainder = input + input_length - pos;
+    unsigned long remainder = input + input_length - pos;
     std::uint8_t * result = output;
     if (remainder) {
         unsigned value = pos[0];
@@ -118,7 +118,7 @@ std::uint8_t const * olm::decode_base64(
         value >>= 8; output[0] = value;
         output += 3;
     }
-    unsigned remainder = input + input_length - pos;
+    unsigned long remainder = input + input_length - pos;
     if (remainder) {
         unsigned value = DECODE_BASE64[pos[0] & 0x7F];
         value <<= 6; value |= DECODE_BASE64[pos[1] & 0x7F];

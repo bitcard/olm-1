@@ -35,8 +35,8 @@ static const std::size_t MAX_MESSAGE_GAP = 2000;
  * @param our_key             our new ratchet key T(n)
  * @param their_key           their most recent ratchet key T(n-1)
  * @param info                table of constants for the ratchet function
- * @param new_root_key[out]   returns the new root key R(n)
- * @param new_chain_key[out]  returns the first chain key in the new chain
+ * @param new_root_key   returns the new root key R(n)
+ * @param new_chain_key  returns the first chain key in the new chain
  *                            C(n,0)
  */
 static void create_chain_key(

@@ -167,7 +167,7 @@ static std::uint8_t const * skip_unknown(
 
 
 std::size_t olm::encode_message_length(
-    std::uint32_t counter,
+    std::size_t counter,
     std::size_t ratchet_key_length,
     std::size_t ciphertext_length,
     std::size_t mac_length

@@ -27,7 +27,7 @@
     
     olm_get_library_version(&major, &minor, &patch);
     
-    return [NSString stringWithFormat:@"%tu.%tu.%tu", major, minor, patch];
+    return [NSString stringWithFormat:@"%hhu.%hhu.%hhu", major, minor, patch];
 }
 
 @end
